@@ -1,0 +1,187 @@
+<!--+++++++++++-->
+<!--have fun!:)-->
+<!--+++++++++++-->
+<!DOCTYPE html>
+<!--change to 'en' if needed-->
+<html lang="de">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--change to any title-->
+    <title>Data.Hub</title>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--the style sheet-->
+    
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-ie7.css">
+	<link rel="stylesheet" href="css/bootstrap_ms.css">
+	<link rel="stylesheet" href="css/no_script.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/Chart.bundle.min.js"></script>
+	
+	
+</head>
+
+<body>
+
+<section id = "header" class = "container">
+	<div class = "row">
+		<div class = "col-md-3">
+			<img class = "img-responsive" src="img/aml_logo.png" alt="Logo aspern.mobil LAB">
+		</div>
+		<div class = "col-md-9">
+			<h1>DATA.hub</h1>
+			<!-- <nav>
+				<ul>
+					<li>Home</li>
+					<li>Source Type</li>
+					<li>Data Source</li>
+					<li>OGD</li>
+					<li>Project</li>
+					<li>Reading Point</li>
+				</ul>
+			</nav>	 -->
+		</div>
+	</div>	
+</section>
+
+<!--device-->
+
+<section id="content">
+	<div class = "container">	
+		<div class = "row">
+			<div class = "col-md-12">
+				<h2>Sensorbox 008 <span>edit-button</span></h2>
+				<span>06641234567; GM; v1.01; Boxcase</span>
+			</div>
+		</div>
+		
+		<div class = "row">
+			<div class = "col-md-12">
+				<span class = "btn_group">
+					<button>alle</button><!--
+					--><button>heute</button><!--
+					--><button>letzte Woche</button><!--
+					--><button>letzter Monat</button><!--
+					--><button>von</button><!--
+					--><button>bis</button>
+				</span>
+				<button>über 30°C</button>
+				<button> über 75dB</button>
+			</div>
+		</div>
+		
+		
+		
+		<div class = "row">
+			<div class = "col-md-8">
+				<div id = "map" class = "content_box">
+					MAP
+				</div>
+			</div>
+			
+			<div class = "col-md-4">
+				<div id = "data" class = "content_box">
+					DATA
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class = "row">
+			<div class = "col-md-12">
+				<div id = "graph1" class = "content_box">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class = "row">
+			<div class = "col-md-12">
+				<div id = "graph2" class = "content_box">
+					Graph 2
+				</div>
+			</div>
+		</div>
+			
+		<div class = "row">
+			<div class = "col-md-12">
+				<div id = "log" class = "content_box">
+					Log
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+
+
+<div id = "footer">
+	<div id = "footer_content" class = "container">
+		<span id = "message_box"></span>
+		
+		
+		<form id = "kontakt_formular" name = "kontakt" method="post" action = "#kontakt">
+
+			<div class = "row">
+				<div class = "col-md-12">
+					<h2>Hilfe! Ich benötige Support.</h2>
+				</div><!--col-->
+			</div><!--row-->
+
+			<div class = "row">
+				<div class = "col-md-8 col-sm-12">
+					
+					
+	
+					<div><label for="nachricht" class = "label_kontakt" style = "margin-top:20px">Mein Problem:</label>
+					<textarea placeholder=""  name="nachricht" cols="50" rows="5" maxlength="1000"></textarea></div>
+	
+					<div class = "form_meta_box" style ="margin-bottom:0; margin-top:10px;">	
+						<label class="community_checkbox">Ich stimme der <a href = "https://www.mobillab.wien/datenschutzerklaerung/" target = "_blank">Datenschutzerklärung</a> zu.*
+						  <input type="checkbox" name="datenschutz_checkbox" required> 
+						  <span class="checkmark"></span>
+						</label>
+					</div><!--form_meta_box-->
+
+					<div class = "form_meta_box">	
+						<span class = "light_gray">Mit * markierte Felder müssen ausgefüllt werden.</span>
+					</div><!--form_meta_box-->
+					<input id = "email" placeholder="email" maxlength="100" type="text" name="email" value="<?php echo esc_attr($_POST['email']); ?>">				
+	
+					<div id = "submit_box" class = "form_meta_box">	
+						 <button type='submit' name='submitted' value='submit' style='background:none;border:none;padding:0'><img src='img/submit.png'></button>
+					</div><!--form_meta_box-->
+	
+				</div><!--col-->
+			</div><!--row-->
+		</form>
+		
+
+		<div id = "footer_row" class = "row">
+			<div class = "col-md-6 col-md-offset-2">
+				<span style = "font-weight:600;font-size:25px;">aspern.mobil LAB<br><span style = "color:#069ac5">DATA.hub</span></span>
+				<p style = "font-size:25px">Gemeinsam an einer neuen<br>urbanen Mobilität arbeiten!</p>
+				<a href = "<?php bloginfo('url'); ?>/impressum/">Impressum</a><br>
+				<a href = "<?php bloginfo('url'); ?>/datenschutzerklaerung/">Datenschutzerklärung</a><br>
+			</div><!--col-->
+			<div class = "col-md-4">
+				<div class = "foerder_geber">Gefördert im Rahmen des Programms<br><i>Mobilität der Zukunft</i> von:
+					<div class = "foerder_geber_image"><a href = "https://www.bmk.gv.at/" target="_blank"><img class = "img-responsive" src="img/foerder/bmk-logo-srgb.png" alt="BMK Logo"></a></div>
+				</div>
+				
+			</div><!--col-->
+		</div><!--row-->
+	</div><!--footer_content-->
+</div><!--footer-->	
+
+
+
+<script type="text/javascript" src="js/custom.js"> </script>
+</body>
+</html>
