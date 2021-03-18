@@ -30,19 +30,28 @@ canvas{
 	background-color:white;
 }
 button{
+	height:37px;
 	border:1px solid black;
-	padding:5px 15px;
+	padding:0px 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	background-color:white;
 }
+input:focus, textarea:focus, select:focus, button:focus{
+        outline: none;
+}
 button:hover{
+	background-color:#e7dc00;
+}
+
+button:hover > input{
 	background-color:#e7dc00;
 }
 
 .btn_group button{
 	border-right:none;
+	
 }
 .btn_group button{
 	-webkit-border-radius: 0;
@@ -66,7 +75,62 @@ button:hover{
 	border-bottom-right-radius: 10px;
 	border-right:1px solid black
 }
+.btn_input{
+	padding:0 10px;
+	
+}
+.btn_input input{
+	border:0;
+	margin:0 5px;
+	padding:0;
+	height:35px;
+	color:gray;
+	text-align:center;
+}
 
+.btn_icon{
+	padding:0;
+	margin:0;
+	background-color:transparent;
+	line-height:0;
+	border:0;
+}
+.btn_icon img{
+	height:100%;
+	width:100%;
+}
+#btn_edit{
+	height:25px;
+	width:25px;
+	margin-left:20px;
+}
+
+.icon_sm{
+	width:20px;
+	height:20px;
+	margin-right:20px;
+}
+.font_md{
+	font-size:25px;
+}
+.font_xs{
+	font-size:15px;
+}
+.icon_md{
+	width:30px;
+	height:30px;
+	margin-right:20px;
+}
+#online_dot{
+	display:inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width:20px;
+	height:20px;
+	background-color:#34cc34;
+	margin-right:20px;
+}
 
 .content_box{
 	width:100%;
@@ -76,12 +140,64 @@ button:hover{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	background-color:white;
+	padding:15px 20px;
+	position:relative;
+}
+.content_box_withinfo{
+	padding-bottom:50px;
+}
+.bottom_info{
+	position:absolute;
+	bottom:0;
+	padding:15px 0;
+	width:100%;
+}
+.bottom_info_grp{
+	margin:0 30px;
+}
+.bottom_info_grp:first-child{
+	margin-left:0;
+}
+.bottom_info_grp:last-child{
+	margin-right:0;
+}
+.bottom_info .v_center{
+	justify-content:center;
+}
+.bottom_info .v_center .icon_sm{
+	margin-right:5px;
 }
 #graph1.content_box{
-	border-color:#069ac5;
+	border-color:#ff4893;
 }
 #graph2.content_box{
-	border-color:#ff4893;
+	border-color:#069ac5;	
+}
+
+.v_center{
+	display:flex;
+	align-items:center;
+}
+
+
+#data .v_center{
+	margin:10px 0;
+}
+
+
+/*tables*/
+table{
+	width:100%;
+	text-align:center;
+}
+td{
+	padding:5px 0;
+}
+tr:nth-child(even){
+	background: #E6E6E6;
+}
+tr:nth-child(odd){
+	background: white;
 }
 
 /*+++++*/
